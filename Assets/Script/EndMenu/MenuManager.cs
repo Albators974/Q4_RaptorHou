@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -22,6 +23,8 @@ public class MenuManager : MonoBehaviour
         {
             _bossSlider.value = PlayerPrefs.GetInt("BossHealth");
         }
+
+        Gamepad.current.ResetHaptics();
 
         _highScoreText.text = "Hight score : " + PlayerPrefs.GetInt("HighScore");
     }

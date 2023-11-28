@@ -19,7 +19,7 @@ TagManager:
   - IgnoreByBuletNotPlayer
   - Boss
   - PlayerBullet
-  - 
+  - IgnorBulletNotEdgeMap
   - 
   - 
   - 

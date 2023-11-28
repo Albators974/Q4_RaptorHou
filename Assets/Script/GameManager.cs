@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 	public string _endScene;
     public float _rotationSpeedSkyBox = 1.0f;
     public Slider _hpSlider;
+    public AudioSource _audioSourceSpawn;
+    public AudioSource _audioSourceInGame;
 
     private int _countToSpawn;
 
@@ -28,6 +30,8 @@ public class GameManager : MonoBehaviour
     {
 		instance = this;
 		_countToSpawn = 0;
+
+        _audioSourceSpawn.Play();
 
         foreach (var bullet in _listAllBullet)
         {
@@ -50,6 +54,12 @@ public class GameManager : MonoBehaviour
         else if (_actualBossSpawned != null && _player._nbrBossKilled == 0 && _actualBossSpawned.GetComponent<FirstBoss>()._lifePoint >= 0)
         {
 			_hpSlider.value = _actualBossSpawned.GetComponent<FirstBoss>()._lifePoint;
+        }
+
+        if (!_audioSourceSpawn.isPlaying && !_audioSourceInGame.isPlaying)
+        {
+            Debug.Log("Condition to play second music is true.");
+            _audioSourceInGame.Play();
         }
 
         //Skybox Rotaion

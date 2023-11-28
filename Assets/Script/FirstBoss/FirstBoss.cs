@@ -26,9 +26,12 @@ public class FirstBoss : MonoBehaviour
 
     public int _lifePoint = 1000000;
 
+    public CircleCollider2D _circleCollider2;
+
+    public List<Vector3> _thirdAttackBulletSpawn;
+
     private int _deplacementNbrSecondAttackScheme;
     private int _random;
-    public List<Vector3> _thirdAttackBulletSpawn;
 
     void Start()
     {
@@ -43,7 +46,8 @@ public class FirstBoss : MonoBehaviour
         _distanceToParkour = BossManager.instance._distanceToParkourFirstBoss;
         _duplicationToDO = BossManager.instance._duplicationToDOFirstBoss;
         _distanceSpanwBoss = BossManager.instance._distanceSpanwBossFirstBoss;
-        NextAttackScheme();
+        _circleCollider2.enabled = false;
+        StartCoroutine(SpawningTime());
     }
 
     public void FirstAttackScheme()
@@ -117,6 +121,13 @@ public class FirstBoss : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    IEnumerator SpawningTime()
+    {
+        yield return new WaitForSeconds(18f);
+        _circleCollider2.enabled = true;
+        NextAttackScheme();
     }
 
     IEnumerator TimeToWaitForEndingAttackScheme(float time)

@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI _scoreText;
     public float _invincibleTime;
     public CircleCollider2D _coreCollider;
+    public AudioSource _shipTouched;
+    public AudioSource _firing;
 
     private int _hp;
     private Rigidbody2D _rb;
@@ -109,6 +111,7 @@ public class Player : MonoBehaviour
         }
         
         yield return new WaitForSeconds(0.1f);
+        _firing.Play();
         UpdateLunchingPos(index);
     }
 
@@ -118,13 +121,24 @@ public class Player : MonoBehaviour
         {
             _hp--;
             _hpIndication.text = "Life point : " + _hp + " / " + _maxHp;
+            _shipTouched.Play();
+            if (Gamepad.current != null)
+            {
+                Gamepad.current.SetMotorSpeeds(0.8f, 0.8f);
+                Invoke("StopVibratingGamepad", 0.5f);
+            }
             InvincibleTimeTouchStart();
         }
 
-        if (_hp == 0)
+        if (_hp <= 0)
         {
             GameManager.instance.GameEnd();
         }
+    }
+
+    public void StopVibratingGamepad()
+    {
+        Gamepad.current.ResetHaptics();
     }
 
     public void InvincibleTimeTouchStart()
