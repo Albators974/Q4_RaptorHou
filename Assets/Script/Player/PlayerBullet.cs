@@ -27,5 +27,16 @@ public class PlayerBullet : MonoBehaviour
         _isLunched = false;
         transform.position = _initialPosition;
         _rb.velocity = Vector2.zero;
+
+        if (collision.gameObject.tag != "Boss" ) 
+        {
+            _player._score -= 5;
+            _player._scoreText.text = "Score : " + _player._score;
+        }
+        else
+        {
+            _player._score += 2;
+            _player._scoreText.text = "Score : " + _player._score;
+        }
     }
 }

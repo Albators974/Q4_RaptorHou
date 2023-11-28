@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
 	public List<GameObject> _bossList;
 	public GameObject _actualBossSpawned;
 	public string _endScene;
-	public Slider _hpSlider;
+    public float _rotationSpeedSkyBox = 1.0f;
+    public Slider _hpSlider;
 
     private int _countToSpawn;
 
@@ -50,6 +51,11 @@ public class GameManager : MonoBehaviour
         {
 			_hpSlider.value = _actualBossSpawned.GetComponent<FirstBoss>()._lifePoint;
         }
+
+        //Skybox Rotaion
+        Material skyboxMaterial = RenderSettings.skybox;
+        float rotation = Time.time * _rotationSpeedSkyBox;
+        skyboxMaterial.SetFloat("_Rotation", rotation);
     }
 
     public void SpawningNextBoss(int nbrOfBossKilled)
@@ -59,6 +65,12 @@ public class GameManager : MonoBehaviour
 
 	public void GameEnd()
 	{
+		PlayerPrefs.SetInt("Score", _player._score);
+        if (PlayerPrefs.GetInt("HighScore") <= _player._score)
+        {
+			PlayerPrefs.SetInt("HighScore", _player._score);
+        }
+
         SceneManager.LoadScene(_endScene);
     }
 }

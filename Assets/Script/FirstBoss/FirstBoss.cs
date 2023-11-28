@@ -1,10 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class FirstBoss : MonoBehaviour
 {
@@ -404,6 +400,12 @@ public class FirstBoss : MonoBehaviour
         if (collision.gameObject.tag == "PlayerBullet")
         {
             _lifePoint--;
+            PlayerPrefs.SetInt("BossHealth", _lifePoint);
+        }
+
+        if (_lifePoint == 0)
+        {
+            GameManager.instance.GameEnd();
         }
     }
 }

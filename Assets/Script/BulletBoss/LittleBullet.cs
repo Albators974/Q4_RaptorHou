@@ -35,6 +35,5 @@ public class LittleBullet : MonoBehaviour
         transform.position = _initialPos;
         _rb.velocity = Vector2.zero;
         _rb.gravityScale = 0;
-        Debug.Log(collision.gameObject.name);
     }
 }
