@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class FirstBoss : MonoBehaviour
@@ -30,8 +31,15 @@ public class FirstBoss : MonoBehaviour
 
     public List<Vector3> _thirdAttackBulletSpawn;
 
+    public GameObject _light;
+
+    public List<GameObject> _listBonus;
+
     private int _deplacementNbrSecondAttackScheme;
     private int _random;
+    private TextMeshProUGUI _countDown;
+    private int _modulingBonus = 0;
+    private int _numberHpToDecreasToSpawnBonus;
 
     void Start()
     {
@@ -47,6 +55,12 @@ public class FirstBoss : MonoBehaviour
         _duplicationToDO = BossManager.instance._duplicationToDOFirstBoss;
         _distanceSpanwBoss = BossManager.instance._distanceSpanwBossFirstBoss;
         _circleCollider2.enabled = false;
+        _light.SetActive(false);
+        _countDown = GameManager.instance._bossCountDown;
+        GameManager.instance._player._canShoot = false;
+        _lifePoint = PlayerPrefs.GetInt("BossMaxHp");
+        GameManager.instance._hpSlider.maxValue = _lifePoint;
+        _numberHpToDecreasToSpawnBonus = _lifePoint / 4;
         StartCoroutine(SpawningTime());
     }
 
@@ -123,11 +137,57 @@ public class FirstBoss : MonoBehaviour
         }
     }
 
+    public void LightFlashing()
+    {
+        _light.SetActive(!_light.activeSelf);
+        Invoke("LightFlashing", 1f);
+    }
+
     IEnumerator SpawningTime()
     {
+        StartCoroutine(TextCountDown());
         yield return new WaitForSeconds(18f);
+        LightFlashing();
         _circleCollider2.enabled = true;
         NextAttackScheme();
+    }
+
+    IEnumerator TextCountDown()
+    {
+        int countDown = 10;
+        yield return new WaitForSeconds(8f);
+        _countDown.gameObject.SetActive(true);
+        _countDown.text = "Boss active in : " + countDown;
+        countDown = 9;
+        yield return new WaitForSeconds(1f);
+        _countDown.text = "Boss active in : " + countDown;
+        countDown = 8;
+        yield return new WaitForSeconds(1f);
+        _countDown.text = "Boss active in : " + countDown;
+        countDown = 7;
+        yield return new WaitForSeconds(1f);
+        _countDown.text = "Boss active in : " + countDown;
+        countDown = 6;
+        yield return new WaitForSeconds(1f);
+        _countDown.text = "Boss active in : " + countDown;
+        countDown = 5;
+        yield return new WaitForSeconds(1f);
+        _countDown.text = "Boss active in : " + countDown;
+        countDown = 4;
+        yield return new WaitForSeconds(1f);
+        _countDown.text = "Boss active in : " + countDown;
+        countDown = 3;
+        yield return new WaitForSeconds(1f);
+        _countDown.text = "Boss active in : " + countDown;
+        countDown = 2;
+        yield return new WaitForSeconds(1f);
+        _countDown.text = "Boss active in : " + countDown;
+        countDown = 1;
+        yield return new WaitForSeconds(1f);
+        _countDown.text = "Boss active in : " + countDown;
+        yield return new WaitForSeconds(1f);
+        _countDown.gameObject.SetActive(false);
+        GameManager.instance._player._canShoot = true;
     }
 
     IEnumerator TimeToWaitForEndingAttackScheme(float time)
@@ -412,7 +472,16 @@ public class FirstBoss : MonoBehaviour
         {
             _lifePoint--;
             PlayerPrefs.SetInt("BossHealth", _lifePoint);
+            _modulingBonus++;
+            if (_modulingBonus == _numberHpToDecreasToSpawnBonus)
+            {
+                _numberHpToDecreasToSpawnBonus += _numberHpToDecreasToSpawnBonus;
+                int random = Random.Range(0, _listBonus.Count - 1);
+                Instantiate(_listBonus[random], transform.position, Quaternion.identity);
+            }
         }
+
+
 
         if (_lifePoint == 0)
         {

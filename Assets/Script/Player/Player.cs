@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -20,11 +21,16 @@ public class Player : MonoBehaviour
     public CircleCollider2D _coreCollider;
     public AudioSource _shipTouched;
     public AudioSource _firing;
+    public bool _canShoot;
+    public string _typeOfBonus;
+    public Image _bonusImage;
+    public GameObject _shield;
 
     private int _hp;
     private Rigidbody2D _rb;
     private bool _autoMod;
     private SpriteRenderer _spriteRenderer;
+    private bool _shielded;
 
 
     void Start()
@@ -39,6 +45,9 @@ public class Player : MonoBehaviour
         _hp = _maxHp;
         _hpIndication.text = "Life point : " + _hp + " / " + _maxHp;
         _scoreText.text = "Score : " + _score;
+        _shield.SetActive(false);
+        Cursor.visible = false;
+        _bonusImage.color = Color.black;
     }
 
     private void Update()
@@ -57,6 +66,19 @@ public class Player : MonoBehaviour
         _rb.velocity = _direction.normalized * _speed;
     }
 
+    public void UseBonus()
+    {
+        _bonusImage.color = Color.black;
+        switch (_typeOfBonus)
+        {
+            case "Shield":
+                Shield();
+                break;
+            default:
+                break;
+        }
+    }
+
     public void Switching()
     {
         _autoMod = !_autoMod;
@@ -64,7 +86,10 @@ public class Player : MonoBehaviour
         {
             foreach (var pos in _lunchingPos)
             {
-                StartCoroutine(BulletFire(pos, _lunchingPos.IndexOf(pos)));
+                if (_canShoot)
+                {
+                    StartCoroutine(BulletFire(pos, _lunchingPos.IndexOf(pos)));
+                }
             }
         }
         else
@@ -79,7 +104,10 @@ public class Player : MonoBehaviour
         {
             foreach (var pos in _lunchingPos)
             {
-                StartCoroutine(BulletFire(pos, _lunchingPos.IndexOf(pos)));
+                if (_canShoot)
+                {
+                    StartCoroutine(BulletFire(pos, _lunchingPos.IndexOf(pos)));
+                }
             }
         }
         else
@@ -115,9 +143,24 @@ public class Player : MonoBehaviour
         UpdateLunchingPos(index);
     }
 
+    public void Shield()
+    {
+        _bonusImage.sprite = null;
+        _typeOfBonus = null;
+        _shielded = true;
+        _shield.SetActive(true);
+        Invoke("StopShield", 2f);
+    }
+
+    public void StopShield()
+    {
+        _shielded = false;
+        _shield.SetActive(false);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet" && !_shielded)
         {
             _hp--;
             _hpIndication.text = "Life point : " + _hp + " / " + _maxHp;

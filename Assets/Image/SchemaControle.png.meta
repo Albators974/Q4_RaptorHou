@@ -1,0 +1,1890 @@
+fileFormatVersion: 2
+guid: d1aafe21c94c12a45b7fc6e6b2766c54
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4692023396076335534
+    second: SchemaControle_0
+  - first:
+      213: -102945574298204979
+    second: SchemaControle_1
+  - first:
+      213: 7554762324818995194
+    second: SchemaControle_2
+  - first:
+      213: 772594333189560824
+    second: SchemaControle_3
+  - first:
+      213: 1987403419392087440
+    second: SchemaControle_4
+  - first:
+      213: -4692539544327242760
+    second: SchemaControle_5
+  - first:
+      213: -8915804692985408637
+    second: SchemaControle_6
+  - first:
+      213: 6489552661411893353
+    second: SchemaControle_7
+  - first:
+      213: 6150248083172927636
+    second: SchemaControle_8
+  - first:
+      213: 2775096144848261153
+    second: SchemaControle_9
+  - first:
+      213: 9032591371912778681
+    second: SchemaControle_10
+  - first:
+      213: 3935056340964363772
+    second: SchemaControle_11
+  - first:
+      213: -6620265392763602767
+    second: SchemaControle_12
+  - first:
+      213: 1065461782462427216
+    second: SchemaControle_13
+  - first:
+      213: -4202472841886938955
+    second: SchemaControle_14
+  - first:
+      213: 7428154558470881586
+    second: SchemaControle_15
+  - first:
+      213: -6876309708489446208
+    second: SchemaControle_16
+  - first:
+      213: -8248854234777350885
+    second: SchemaControle_17
+  - first:
+      213: -277641636728056555
+    second: SchemaControle_18
+  - first:
+      213: 132820373597753303
+    second: SchemaControle_19
+  - first:
+      213: 5224863179826702306
+    second: SchemaControle_20
+  - first:
+      213: -3872687034400207164
+    second: SchemaControle_21
+  - first:
+      213: -287911906383675599
+    second: SchemaControle_22
+  - first:
+      213: -211324660956260139
+    second: SchemaControle_23
+  - first:
+      213: -8598066591752576220
+    second: SchemaControle_24
+  - first:
+      213: 3043077933018541667
+    second: SchemaControle_25
+  - first:
+      213: 5141892211189100241
+    second: SchemaControle_26
+  - first:
+      213: 9174171452125845587
+    second: SchemaControle_27
+  - first:
+      213: -3095600140249975737
+    second: SchemaControle_28
+  - first:
+      213: -5061264956450511636
+    second: SchemaControle_29
+  - first:
+      213: -8690142953137113455
+    second: SchemaControle_30
+  - first:
+      213: 540840601323766755
+    second: SchemaControle_31
+  - first:
+      213: 2992339435260325822
+    second: SchemaControle_32
+  - first:
+      213: 3368172600130341625
+    second: SchemaControle_33
+  - first:
+      213: -5349627556933709638
+    second: SchemaControle_34
+  - first:
+      213: -8991370053189652307
+    second: SchemaControle_35
+  - first:
+      213: -3554687451224825559
+    second: SchemaControle_36
+  - first:
+      213: 8226950450324622902
+    second: SchemaControle_37
+  - first:
+      213: 674641186813733314
+    second: SchemaControle_38
+  - first:
+      213: 7243227169701141348
+    second: SchemaControle_39
+  - first:
+      213: 5570766237344689174
+    second: SchemaControle_40
+  - first:
+      213: 8012704526521908632
+    second: SchemaControle_41
+  - first:
+      213: -7184853655336274890
+    second: SchemaControle_42
+  - first:
+      213: -6059745059373355870
+    second: SchemaControle_43
+  - first:
+      213: 3466417286542178419
+    second: SchemaControle_44
+  - first:
+      213: 7479059127332848523
+    second: SchemaControle_45
+  - first:
+      213: 8960620502065598905
+    second: SchemaControle_46
+  - first:
+      213: 3612263627749580116
+    second: SchemaControle_47
+  - first:
+      213: -7577693007304027030
+    second: SchemaControle_48
+  - first:
+      213: 6855895459578048971
+    second: SchemaControle_49
+  - first:
+      213: -8307606454385280677
+    second: SchemaControle_50
+  - first:
+      213: -6686694453135604257
+    second: SchemaControle_51
+  - first:
+      213: 4299302618994264890
+    second: SchemaControle_52
+  - first:
+      213: -6287420113396157779
+    second: SchemaControle_53
+  - first:
+      213: -3895995899743018252
+    second: SchemaControle_54
+  - first:
+      213: 3728319005813073654
+    second: SchemaControle_55
+  - first:
+      213: -920672557184899772
+    second: SchemaControle_56
+  - first:
+      213: 4066855580231652200
+    second: SchemaControle_57
+  - first:
+      213: -1929689094621747418
+    second: SchemaControle_58
+  - first:
+      213: 7170271880710239347
+    second: SchemaControle_59
+  - first:
+      213: -836114913103524788
+    second: SchemaControle_60
+  - first:
+      213: 6874408468339662533
+    second: SchemaControle_61
+  - first:
+      213: -850960697156456418
+    second: SchemaControle_62
+  - first:
+      213: 546350883826138644
+    second: SchemaControle_63
+  - first:
+      213: -7165517384304611293
+    second: SchemaControle_64
+  - first:
+      213: 8418746682207431533
+    second: SchemaControle_65
+  - first:
+      213: 5825747357649835590
+    second: SchemaControle_66
+  - first:
+      213: 1062182863638031728
+    second: SchemaControle_67
+  - first:
+      213: -7167879643180719315
+    second: SchemaControle_68
+  - first:
+      213: -7991894753089606874
+    second: SchemaControle_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SchemaControle_0
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 1272
+        width: 72
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1b3f85b6a6d1140800000000000000
+      internalID: 4692023396076335534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_1
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1276
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4c1ccab83429ef0800000000000000
+      internalID: -102945574298204979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_2
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1273
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7275dbe48e7d860800000000000000
+      internalID: 7554762324818995194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1276
+        width: 73
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f95e31e37ec8ba00800000000000000
+      internalID: 772594333189560824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_4
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1276
+        width: 88
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095134651eca49b10800000000000000
+      internalID: 1987403419392087440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_5
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1277
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbb6e58520c0eeb0800000000000000
+      internalID: -4692539544327242760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_6
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1277
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38318d3aed2b44480800000000000000
+      internalID: -8915804692985408637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_7
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1276
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96095ae23c58f0a50800000000000000
+      internalID: 6489552661411893353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_8
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1273
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498ac06db021a5550800000000000000
+      internalID: 6150248083172927636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_9
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1273
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1209c3b9d3f138620800000000000000
+      internalID: 2775096144848261153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_10
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1272
+        width: 63
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b39e1cfef53a5d70800000000000000
+      internalID: 9032591371912778681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_11
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1276
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd445ea4e02c9630800000000000000
+      internalID: 3935056340964363772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_12
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1273
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8738173b71024a0800000000000000
+      internalID: -6620265392763602767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_13
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 738
+        width: 742
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0507d6998d749ce00800000000000000
+      internalID: 1065461782462427216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_14
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1193
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b84a194731dda5c0800000000000000
+      internalID: -4202472841886938955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_15
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1192
+        width: 90
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2310b52073b161760800000000000000
+      internalID: 7428154558470881586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_16
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 1191
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ccaaeb90c07290a0800000000000000
+      internalID: -6876309708489446208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_17
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1192
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d8e1c17ce268d80800000000000000
+      internalID: -8248854234777350885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_18
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1192
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51557f3076e952cf0800000000000000
+      internalID: -277641636728056555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_19
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1189
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df8a331d6fd7d100800000000000000
+      internalID: 132820373597753303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_20
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1187
+        width: 67
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7a6992161728840800000000000000
+      internalID: 5224863179826702306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_21
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 1193
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce805c19a3714ac0800000000000000
+      internalID: -3872687034400207164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_22
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1188
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f356585a1210cf0800000000000000
+      internalID: -287911906383675599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_23
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 924
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d81c6b2759311df0800000000000000
+      internalID: -211324660956260139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_24
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 926
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4232f634df78da880800000000000000
+      internalID: -8598066591752576220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_25
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 925
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e6665d14f2b3a20800000000000000
+      internalID: 3043077933018541667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_26
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 921
+        width: 55
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de264129bbab5740800000000000000
+      internalID: 5141892211189100241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_27
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 924
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3589d703454315f70800000000000000
+      internalID: 9174171452125845587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_28
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 925
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74430c9d2183a05d0800000000000000
+      internalID: -3095600140249975737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_29
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 924
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce462ac7656c2c9b0800000000000000
+      internalID: -5061264956450511636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_30
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 925
+        width: 65
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196f5e6c609666780800000000000000
+      internalID: -8690142953137113455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_31
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 920
+        width: 118
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3030259a3718700800000000000000
+      internalID: 540840601323766755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_32
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 890
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfa51ebcdce68920800000000000000
+      internalID: 2992339435260325822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_33
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 890
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa09fc62272ebe20800000000000000
+      internalID: 3368172600130341625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_34
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 889
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0535c941e42c5b0800000000000000
+      internalID: -5349627556933709638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_35
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 890
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0bb8f239c383380800000000000000
+      internalID: -8991370053189652307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_36
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 889
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921a43eb8963baec0800000000000000
+      internalID: -3554687451224825559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_37
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 793
+        width: 52
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ec658a8dffb2270800000000000000
+      internalID: 8226950450324622902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_38
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 798
+        width: 119
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c961e2c59ecc5900800000000000000
+      internalID: 674641186813733314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_39
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 642
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b9e7d0cbc158460800000000000000
+      internalID: 7243227169701141348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_40
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 642
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c6bafa0665f4d40800000000000000
+      internalID: 5570766237344689174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_41
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 642
+        width: 43
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89db0815058d23f60800000000000000
+      internalID: 8012704526521908632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_42
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 642
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634b38edaa54a4c90800000000000000
+      internalID: -7184853655336274890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_43
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 642
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac6f9279f577eba0800000000000000
+      internalID: -6059745059373355870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_44
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 642
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378be9ff7203b1030800000000000000
+      internalID: 3466417286542178419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_45
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 642
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8341da86a4fac760800000000000000
+      internalID: 7479059127332848523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_46
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 642
+        width: 53
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1d3b80fd48a5c70800000000000000
+      internalID: 8960620502065598905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_47
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 642
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45dd31f71a6512230800000000000000
+      internalID: 3612263627749580116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 616
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a649ea2bb50a6d690800000000000000
+      internalID: -7577693007304027030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 616
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1fc5da898052f50800000000000000
+      internalID: 6855895459578048971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_50
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 611
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b597f9002f375bc80800000000000000
+      internalID: -8307606454385280677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_51
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 616
+        width: 120
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5074f82d61433a0800000000000000
+      internalID: -6686694453135604257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_52
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 616
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b4f0b04f03aab30800000000000000
+      internalID: 4299302618994264890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 617
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2306318b89eb8a0800000000000000
+      internalID: -6287420113396157779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_54
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 616
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2607dfe54aee9c0800000000000000
+      internalID: -3895995899743018252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_55
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 616
+        width: 51
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f663ded166adb330800000000000000
+      internalID: 3728319005813073654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_56
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 155
+        width: 407
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4452b8aef2d1933f0800000000000000
+      internalID: -920672557184899772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_57
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 546
+        width: 135
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863d5846a9f507830800000000000000
+      internalID: 4066855580231652200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_58
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 14
+        width: 963
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627202c0efd5835e0800000000000000
+      internalID: -1929689094621747418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_59
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 428
+        width: 56
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374b4b8294ce18360800000000000000
+      internalID: 7170271880710239347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_60
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 434
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cce0d9ae58564f0800000000000000
+      internalID: -836114913103524788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_61
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 433
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce925c641ec66f50800000000000000
+      internalID: 6874408468339662533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_62
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 434
+        width: 76
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10bb2821c7c034f0800000000000000
+      internalID: -850960697156456418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_63
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 439
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e7d21fb37059700800000000000000
+      internalID: 546350883826138644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_64
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 436
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32033ac47e7fe8c90800000000000000
+      internalID: -7165517384304611293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_65
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 440
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6be8f6c08565d470800000000000000
+      internalID: 8418746682207431533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_66
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 439
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64693eb0b5639d050800000000000000
+      internalID: 5825747357649835590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_67
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 397
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07de6a1dfa1adbe00800000000000000
+      internalID: 1062182863638031728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_68
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 397
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23a57b0173968c90800000000000000
+      internalID: -7167879643180719315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchemaControle_69
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 392
+        width: 85
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b29cf9016171190800000000000000
+      internalID: -7991894753089606874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SchemaControle_0: 4692023396076335534
+      SchemaControle_1: -102945574298204979
+      SchemaControle_10: 9032591371912778681
+      SchemaControle_11: 3935056340964363772
+      SchemaControle_12: -6620265392763602767
+      SchemaControle_13: 1065461782462427216
+      SchemaControle_14: -4202472841886938955
+      SchemaControle_15: 7428154558470881586
+      SchemaControle_16: -6876309708489446208
+      SchemaControle_17: -8248854234777350885
+      SchemaControle_18: -277641636728056555
+      SchemaControle_19: 132820373597753303
+      SchemaControle_2: 7554762324818995194
+      SchemaControle_20: 5224863179826702306
+      SchemaControle_21: -3872687034400207164
+      SchemaControle_22: -287911906383675599
+      SchemaControle_23: -211324660956260139
+      SchemaControle_24: -8598066591752576220
+      SchemaControle_25: 3043077933018541667
+      SchemaControle_26: 5141892211189100241
+      SchemaControle_27: 9174171452125845587
+      SchemaControle_28: -3095600140249975737
+      SchemaControle_29: -5061264956450511636
+      SchemaControle_3: 772594333189560824
+      SchemaControle_30: -8690142953137113455
+      SchemaControle_31: 540840601323766755
+      SchemaControle_32: 2992339435260325822
+      SchemaControle_33: 3368172600130341625
+      SchemaControle_34: -5349627556933709638
+      SchemaControle_35: -8991370053189652307
+      SchemaControle_36: -3554687451224825559
+      SchemaControle_37: 8226950450324622902
+      SchemaControle_38: 674641186813733314
+      SchemaControle_39: 7243227169701141348
+      SchemaControle_4: 1987403419392087440
+      SchemaControle_40: 5570766237344689174
+      SchemaControle_41: 8012704526521908632
+      SchemaControle_42: -7184853655336274890
+      SchemaControle_43: -6059745059373355870
+      SchemaControle_44: 3466417286542178419
+      SchemaControle_45: 7479059127332848523
+      SchemaControle_46: 8960620502065598905
+      SchemaControle_47: 3612263627749580116
+      SchemaControle_48: -7577693007304027030
+      SchemaControle_49: 6855895459578048971
+      SchemaControle_5: -4692539544327242760
+      SchemaControle_50: -8307606454385280677
+      SchemaControle_51: -6686694453135604257
+      SchemaControle_52: 4299302618994264890
+      SchemaControle_53: -6287420113396157779
+      SchemaControle_54: -3895995899743018252
+      SchemaControle_55: 3728319005813073654
+      SchemaControle_56: -920672557184899772
+      SchemaControle_57: 4066855580231652200
+      SchemaControle_58: -1929689094621747418
+      SchemaControle_59: 7170271880710239347
+      SchemaControle_6: -8915804692985408637
+      SchemaControle_60: -836114913103524788
+      SchemaControle_61: 6874408468339662533
+      SchemaControle_62: -850960697156456418
+      SchemaControle_63: 546350883826138644
+      SchemaControle_64: -7165517384304611293
+      SchemaControle_65: 8418746682207431533
+      SchemaControle_66: 5825747357649835590
+      SchemaControle_67: 1062182863638031728
+      SchemaControle_68: -7167879643180719315
+      SchemaControle_69: -7991894753089606874
+      SchemaControle_7: 6489552661411893353
+      SchemaControle_8: 6150248083172927636
+      SchemaControle_9: 2775096144848261153
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

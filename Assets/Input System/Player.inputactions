@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "Hold(duration=0.1,pressPoint=0.5)",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "BonusUsing",
+                    "type": "Button",
+                    "id": "181f2015-253b-4cb7-9116-22e7dc80a96e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -101,6 +110,61 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "2D Vector",
+                    "id": "e59dbedc-2e0f-4fe4-8b76-65a1a25ad969",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Moov",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "0fb1bb97-cec9-45d5-9907-c6e42753c721",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Moov",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "87053c46-0c20-45a6-bffa-1bcec39fc812",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Moov",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "98ae99fc-efcc-4194-9bc2-71a6dc26a8bd",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Moov",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "d9edd1aa-8e82-4e98-bfa0-a551409a6b26",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Moov",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "879fae38-25fb-443d-bb73-273c1a0acb32",
                     "path": "<Keyboard>/e",
@@ -141,6 +205,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Firing",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0212e9dc-5ca2-4008-a6dd-6530ac4e38ad",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BonusUsing",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "58ac8402-2e45-454d-abb3-7c0f034ea21b",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BonusUsing",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

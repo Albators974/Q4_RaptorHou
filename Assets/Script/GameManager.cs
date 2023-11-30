@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     public Slider _hpSlider;
     public AudioSource _audioSourceSpawn;
     public AudioSource _audioSourceInGame;
+    public TextMeshProUGUI _bossCountDown;
 
     private int _countToSpawn;
 
@@ -32,6 +34,8 @@ public class GameManager : MonoBehaviour
 		_countToSpawn = 0;
 
         _audioSourceSpawn.Play();
+
+        _bossCountDown.gameObject.SetActive(false);
 
         foreach (var bullet in _listAllBullet)
         {
@@ -62,7 +66,6 @@ public class GameManager : MonoBehaviour
             _audioSourceInGame.Play();
         }
 
-        //Skybox Rotaion
         Material skyboxMaterial = RenderSettings.skybox;
         float rotation = Time.time * _rotationSpeedSkyBox;
         skyboxMaterial.SetFloat("_Rotation", rotation);
