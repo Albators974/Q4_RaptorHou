@@ -372,7 +372,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlasmaBallBlue_0: 5381976424473632671
+      PlasmaBallBlue_1: -4794228705183555565
+      PlasmaBallBlue_2: 4597864827901222630
+      PlasmaBallBlue_3: 630706857005664128
+      PlasmaBallBlue_4: 87144835951643176
+      PlasmaBallBlue_5: -1400358571119063036
+      PlasmaBallBlue_6: -6092868822716332487
+      PlasmaBallBlue_7: 2791462333628772345
+      PlasmaBallBlue_8: -8932977262159923781
+      PlasmaBallBlue_9: -3934669316057284532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

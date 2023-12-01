@@ -1200,7 +1200,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1675469788}
   m_HandleRect: {fileID: 0}
@@ -1265,6 +1265,10 @@ MonoBehaviour:
   _difficultyEasyHp: 0
   _difficultyMediumHp: 0
   _difficultyHardHp: 0
+  _difficultyImpossibleHp: 0
+  _eventSystem: {fileID: 0}
+  _startButton: {fileID: 0}
+  _difficultyEasyButton: {fileID: 0}
 --- !u!1 &1388641493
 GameObject:
   m_ObjectHideFlags: 0

@@ -147,7 +147,7 @@ public class FirstBoss : MonoBehaviour
                 FifthAttackScheme();
                 break;
             case 6:
-                SixthAttackScheme();
+                StartCoroutine(WaitBeforLunchingSixthAttack());
                 break;
             default:
                 break;
@@ -173,7 +173,7 @@ public class FirstBoss : MonoBehaviour
                     FifthAttackScheme();
                     break;
                 case 6:
-                    SixthAttackScheme();
+                    StartCoroutine(WaitBeforLunchingSixthAttack());
                     break;
                 default:
                     break;
@@ -194,6 +194,12 @@ public class FirstBoss : MonoBehaviour
         LightFlashing();
         _circleCollider2.enabled = true;
         NextAttackScheme();
+    }
+
+    IEnumerator WaitBeforLunchingSixthAttack()
+    {
+        yield return new WaitForSeconds(3f);
+        SixthAttackScheme();
     }
 
     IEnumerator TextCountDown()
@@ -513,7 +519,7 @@ public class FirstBoss : MonoBehaviour
     {
         foreach (var retardementBullet in _retardementBulletList)
         {
-            if (!retardementBullet._isLunched)
+            if (!retardementBullet._isLunched && retardementBullet._canBeLunchedAgain)
             {
                 retardementBullet.Lunch(targetPos, transform.position, timeToReachTarget);
                 break;

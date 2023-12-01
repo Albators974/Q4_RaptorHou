@@ -4,6 +4,8 @@ using UnityEngine;
 public class RetardementBullet : MonoBehaviour
 {
     public bool _isLunched;
+    public bool _canBeLunchedAgain;
+    public CircleCollider2D _circleCollider;
 
     private Vector3 _initialPos;
     private Rigidbody2D _rb;
@@ -17,6 +19,7 @@ public class RetardementBullet : MonoBehaviour
     {
         BossManager.instance._retardementBullet.Add(this);
         _isLunched = false;
+        _canBeLunchedAgain = true;
         _rb = GetComponent<Rigidbody2D>();
         _initialPos = transform.position;
         _animator = GetComponent<Animator>();
@@ -32,8 +35,10 @@ public class RetardementBullet : MonoBehaviour
 
             transform.position = Vector3.Lerp(_spawnPos, _targetPos, t);
 
-            if (_tempsEcoule >= _timeToParkourDistance)
+            if (_tempsEcoule > _timeToParkourDistance)
             {
+                _circleCollider.enabled = true;
+                _isLunched = false;
                 _animator.Play("RetardementBulletExplosion");
                 StartCoroutine(WaitForInitialPos(1.5f));
             }
@@ -42,6 +47,8 @@ public class RetardementBullet : MonoBehaviour
 
     public void Lunch(Vector3 targetPos, Vector3 spawn, float timeToParkourDistance)
     {
+        _canBeLunchedAgain = false;
+        _circleCollider.enabled = false;
         _timeToParkourDistance = timeToParkourDistance;
         transform.position = spawn;
         _spawnPos = spawn;
@@ -53,8 +60,8 @@ public class RetardementBullet : MonoBehaviour
     IEnumerator WaitForInitialPos(float time)
     {
         yield return new WaitForSeconds(time);
+        _canBeLunchedAgain = true;
         transform.position = _initialPos;
         _rb.velocity = Vector2.zero;
-        _isLunched = false;
     }
 }

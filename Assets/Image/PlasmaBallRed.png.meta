@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlasmaBallRed_0: -7026076088393167826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

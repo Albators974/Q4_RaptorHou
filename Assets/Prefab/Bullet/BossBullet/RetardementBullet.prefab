@@ -76,6 +76,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isLunched: 0
+  _canBeLunchedAgain: 0
+  _circleCollider: {fileID: 2560024742811583781}
 --- !u!95 &3432696786262137752
 Animator:
   serializedVersion: 7
