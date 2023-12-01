@@ -3078,7 +3078,7 @@ MonoBehaviour:
   _listAllBullet:
   - _nbrToSpawn: 100
     _bulletPrefab: {fileID: 2754569397189335116, guid: e4163c2ccafcdcf468b3e549ce151c4e, type: 3}
-  - _nbrToSpawn: 800
+  - _nbrToSpawn: 1000
     _bulletPrefab: {fileID: 5325796335469135392, guid: 38dd3035adee67b42900ce5eaa876782, type: 3}
   - _nbrToSpawn: 200
     _bulletPrefab: {fileID: 4919489003964203393, guid: 2520139789d823e4b92964bd856114ac, type: 3}

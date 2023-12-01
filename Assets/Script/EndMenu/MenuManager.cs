@@ -16,6 +16,7 @@ public class MenuManager : MonoBehaviour
     public int _difficultyEasyHp;
     public int _difficultyMediumHp;
     public int _difficultyHardHp;
+    public int _difficultyImpossibleHp;
     public EventSystem _eventSystem;
     public GameObject _startButton;
     public GameObject _difficultyEasyButton;
@@ -77,6 +78,7 @@ public class MenuManager : MonoBehaviour
     public void Easy()
     {
         PlayerPrefs.SetInt("BossMaxHp", _difficultyEasyHp);
+        PlayerPrefs.SetInt("Impossible", 0);
         _difficultyCanvas.enabled = false;
         _eventSystem.SetSelectedGameObject(_startButton);
     }
@@ -84,6 +86,7 @@ public class MenuManager : MonoBehaviour
     public void Medium()
     {
         PlayerPrefs.SetInt("BossMaxHp", _difficultyMediumHp);
+        PlayerPrefs.SetInt("Impossible", 0);
         _difficultyCanvas.enabled = false;
         _eventSystem.SetSelectedGameObject(_startButton);
     }
@@ -91,6 +94,15 @@ public class MenuManager : MonoBehaviour
     public void Hard()
     {
         PlayerPrefs.SetInt("BossMaxHp", _difficultyHardHp);
+        PlayerPrefs.SetInt("Impossible", 0);
+        _difficultyCanvas.enabled = false;
+        _eventSystem.SetSelectedGameObject(_startButton);
+    }
+
+    public void Impossible()
+    {
+        PlayerPrefs.SetInt("BossMaxHp", _difficultyImpossibleHp);
+        PlayerPrefs.SetInt("Impossible", 1);
         _difficultyCanvas.enabled = false;
         _eventSystem.SetSelectedGameObject(_startButton);
     }

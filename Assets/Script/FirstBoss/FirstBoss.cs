@@ -18,6 +18,8 @@ public class FirstBoss : MonoBehaviour
     public int _numberOfPointsSecondAttack = 32;
     public int _numberOfPointsThirdAttack = 4;
     public int _numberOfPointsFourthAttack = 3;
+    public int _numberOfWaveSixthAttack = 10;
+    public float _timeTorReachPlayerSixthAttack = 1.5f;
     public int _valeurOffset = 5;
 
     public int _fragmentingNbr;
@@ -60,7 +62,14 @@ public class FirstBoss : MonoBehaviour
         GameManager.instance._player._canShoot = false;
         _lifePoint = PlayerPrefs.GetInt("BossMaxHp");
         GameManager.instance._hpSlider.maxValue = _lifePoint;
-        _numberHpToDecreasToSpawnBonus = _lifePoint / 4;
+        if (PlayerPrefs.GetInt("Impossible") == 0)
+        {         
+            _numberHpToDecreasToSpawnBonus = _lifePoint / 4;
+        }
+        else
+        {
+            _numberHpToDecreasToSpawnBonus = 100;
+        }
         StartCoroutine(SpawningTime());
     }
 
@@ -112,9 +121,14 @@ public class FirstBoss : MonoBehaviour
         StartCoroutine(SpawningBulletFifthAttackScheme(_fragmentingNbr,_distanceToParkour,_fragmentingBulletList, _duplicationToDO, _distanceSpanwBoss));
     }
 
+    public void SixthAttackScheme()
+    {
+        StartCoroutine(SpawningBulletSixthAttackScheme(_timeTorReachPlayerSixthAttack));
+    }
+
     public void NextAttackScheme()
     {
-        _random = Random.Range(1, 6);
+        _random = Random.Range(1, 7);
         switch (_random)
         {
             case 1:
@@ -132,8 +146,38 @@ public class FirstBoss : MonoBehaviour
             case 5:
                 FifthAttackScheme();
                 break;
+            case 6:
+                SixthAttackScheme();
+                break;
             default:
                 break;
+        }
+        if (PlayerPrefs.GetInt("Impossible") == 1)
+        {
+            _random = Random.Range(1, 7);
+            switch (_random)
+            {
+                case 1:
+                    FirstAttackScheme();
+                    break;
+                case 2:
+                    SecondAttackScheme();
+                    break;
+                case 3:
+                    ThirdAttackScheme();
+                    break;
+                case 4:
+                    FourthAttackScheme();
+                    break;
+                case 5:
+                    FifthAttackScheme();
+                    break;
+                case 6:
+                    SixthAttackScheme();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
@@ -291,7 +335,10 @@ public class FirstBoss : MonoBehaviour
 
             _thirdAttackBulletSpawn.Clear();
 
-            FiringRetardementBullet(_tempList);
+            foreach (var _pos in _tempList)
+            {
+                FiringRetardementBullet(_pos, 1f);
+            }
         }
 
         yield return new WaitForSeconds(2.5f);
@@ -354,6 +401,29 @@ public class FirstBoss : MonoBehaviour
         yield return new WaitForSeconds(18.0f);
         StopAllCoroutines();
         NextAttackScheme();
+    }
+
+    IEnumerator SpawningBulletSixthAttackScheme(float timeToReachPlayer)
+    {
+        Vector2 playerPos = GameManager.instance._player.transform.position;
+
+        FiringRetardementBullet(playerPos, timeToReachPlayer);
+
+        _waveNumber++;
+
+        yield return new WaitForSeconds(0.5f);
+
+        if (_waveNumber > _numberOfWaveSixthAttack)
+        {
+            yield return new WaitForSeconds(1.5f);
+            StopAllCoroutines();
+            _waveNumber = 0;
+            NextAttackScheme();
+        }
+        else
+        {
+            StartCoroutine(SpawningBulletSixthAttackScheme(timeToReachPlayer));
+        }
     }
 
     public void CreatAttack(Vector3 spawnPoint)
@@ -439,17 +509,14 @@ public class FirstBoss : MonoBehaviour
         }
     }
 
-    public void FiringRetardementBullet(List<Vector3> _listPointPos)
+    public void FiringRetardementBullet(Vector3 targetPos, float timeToReachTarget)
     {
-        foreach (var pos in _listPointPos)
+        foreach (var retardementBullet in _retardementBulletList)
         {
-            foreach (var retardementBullet in _retardementBulletList)
+            if (!retardementBullet._isLunched)
             {
-                if (!retardementBullet._isLunched)
-                {
-                    retardementBullet.Lunch(pos, transform.position);
-                    break;
-                }
+                retardementBullet.Lunch(targetPos, transform.position, timeToReachTarget);
+                break;
             }
         }
     }

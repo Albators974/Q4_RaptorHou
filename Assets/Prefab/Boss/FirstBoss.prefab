@@ -96,6 +96,8 @@ MonoBehaviour:
   _numberOfPointsSecondAttack: 32
   _numberOfPointsThirdAttack: 4
   _numberOfPointsFourthAttack: 3
+  _numberOfWaveSixthAttack: 10
+  _timeTorReachPlayerSixthAttack: 0.3
   _valeurOffset: 5
   _fragmentingNbr: 0
   _distanceToParkour: 0
@@ -105,7 +107,6 @@ MonoBehaviour:
   _circleCollider2: {fileID: 5524281141305655488}
   _thirdAttackBulletSpawn: []
   _light: {fileID: 6058547551425557733}
-  _numberHpToDecreasToSpawnBonus: 2500
   _listBonus:
   - {fileID: 721585669118744131, guid: a24562dfdbb8981458fc2d5384619279, type: 3}
 --- !u!58 &5524281141305655488

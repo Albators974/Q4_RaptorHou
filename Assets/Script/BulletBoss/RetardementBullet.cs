@@ -11,6 +11,7 @@ public class RetardementBullet : MonoBehaviour
     private Vector3 _spawnPos;
     private float _tempsEcoule = 0f;
     private Animator _animator;
+    private float _timeToParkourDistance = 1f;
 
     void Start()
     {
@@ -27,25 +28,25 @@ public class RetardementBullet : MonoBehaviour
         {
             _tempsEcoule += Time.deltaTime;
 
-            float t = Mathf.Clamp01(_tempsEcoule / 1.0f);
+            float t = Mathf.Clamp01(_tempsEcoule / _timeToParkourDistance);
 
             transform.position = Vector3.Lerp(_spawnPos, _targetPos, t);
 
-            if (_tempsEcoule >= 1)
+            if (_tempsEcoule >= _timeToParkourDistance)
             {
-                _isLunched = false;
                 _animator.Play("RetardementBulletExplosion");
                 StartCoroutine(WaitForInitialPos(1.5f));
             }
         }
     }
 
-    public void Lunch(Vector3 pos, Vector3 spawn)
+    public void Lunch(Vector3 targetPos, Vector3 spawn, float timeToParkourDistance)
     {
+        _timeToParkourDistance = timeToParkourDistance;
         transform.position = spawn;
         _spawnPos = spawn;
         _tempsEcoule = 0;
-        _targetPos = pos;
+        _targetPos = targetPos;
         _isLunched = true;
     }
 
@@ -54,5 +55,6 @@ public class RetardementBullet : MonoBehaviour
         yield return new WaitForSeconds(time);
         transform.position = _initialPos;
         _rb.velocity = Vector2.zero;
+        _isLunched = false;
     }
 }
