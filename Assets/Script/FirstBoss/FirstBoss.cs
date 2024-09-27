@@ -5,34 +5,34 @@ using UnityEngine;
 
 public class FirstBoss : MonoBehaviour
 {
-    private float _timeToWAitForFirtsAttackSchemeToEnd = 1f;
-    private int _waveNumber;
-    private int _numberOfPointsFirstAttack = 40;
-    private int _numberOfPointsSecondAttack = 32;
-    private int _numberOfPointsThirdAttack = 4;
-    private int _numberOfPointsFourthAttack = 3;
-    private int _numberOfWaveSixthAttack = 10;
-    private float _timeTorReachPlayerSixthAttack = 1.5f;
-    private int _valeurOffset = 5;
-    private int _fragmentingNbr;
-    private float _distanceToParkour;
-    private int _duplicationToDO;
-    private float _distanceSpanwBoss;
-    private int _currentDeplacementNbrSecondAttackScheme = 0;
-    private int _random;
-    private int _modulingBonus = 0;
-    private int _numberHpToDecreasToSpawnBonus;
+    public float _timeToWAitForFirtsAttackSchemeToEnd = 1f;
+    public int _waveNumber;
+    public int _numberOfPointsFirstAttack = 40;
+    public int _numberOfPointsSecondAttack = 32;
+    public int _numberOfPointsThirdAttack = 4;
+    public int _numberOfPointsFourthAttack = 3;
+    public int _numberOfWaveSixthAttack = 10;
+    public float _timeTorReachPlayerSixthAttack = 1.5f;
+    public int _valeurOffset = 5;
+    public int _fragmentingNbr;
+    public float _distanceToParkour;
+    public int _duplicationToDO;
+    public float _distanceSpanwBoss;
+    public int _currentDeplacementNbrSecondAttackScheme = 0;
+    public int _random;
+    public int _modulingBonus = 0;
+    public int _numberHpToDecreasToSpawnBonus;
 
-    private TextMeshProUGUI _countDown;
-    private List<LittleBullet> _littleBulletList;
-    private List<Vector3> _positionSecondAttackScheme;
-    private List<BigBullet> _bigBulletList;
-    private List<RetardementBullet> _retardementBulletList;
-    private List<FragmentingBullet> _fragmentingBulletList;
-    private CircleCollider2D _circleCollider2;
-    private List<Vector3> _thirdAttackBulletSpawn;
-    private GameObject _light;
-    private List<GameObject> _listBonus;
+    public TextMeshProUGUI _countDown;
+    public List<Vector3> _positionSecondAttackScheme;
+    public List<Bullet> _littleBulletList;
+    public List<Bullet> _bigBulletList;
+    public List<RetardementBullet> _retardementBulletList;
+    public List<FragmentingBullet> _fragmentingBulletList;
+    public CircleCollider2D _circleCollider2;
+    public List<Vector3> _thirdAttackBulletSpawn;
+    public GameObject _light;
+    public List<GameObject> _listBonus;
 
     public int _lifePoint = 1000000;
 
@@ -40,7 +40,7 @@ public class FirstBoss : MonoBehaviour
     {
         _littleBulletList = BossManager.instance._littleBullet;
         _bigBulletList = BossManager.instance._bigBullet;
-        _retardementBulletList = BossManager.instance._retardementBullet;
+        _retardementBulletList = BossManager.instance._retardementBulletList;
         _fragmentingBulletList = BossManager.instance._fragmentingBulletList;
         _positionSecondAttackScheme = BossManager.instance._firstBossPositionSecondAttackScheme;
         _positionSecondAttackScheme.Add(transform.position);
@@ -252,25 +252,17 @@ public class FirstBoss : MonoBehaviour
         {
             float angle = i * (360f / _numberOfPointsFirstAttack);
 
+            float x = transform.position.x + circleRadius * Mathf.Cos(Mathf.Deg2Rad * (angle + offset));
+            float y = transform.position.y + circleRadius * Mathf.Sin(Mathf.Deg2Rad * (angle + offset));
+
+            Vector3 spawnPosition = new Vector3(x, y, 0f);
+
             if (angle % 45 == 0 && _waveNumber % 2 == 0)
             {
-                angle += offset;
-
-                float x = transform.position.x + circleRadius * Mathf.Cos(Mathf.Deg2Rad * angle);
-                float y = transform.position.y + circleRadius * Mathf.Sin(Mathf.Deg2Rad * angle);
-
-                Vector3 spawnPosition = new Vector3(x, y, 0f);
                 FiringBigBullet(spawnPosition);
             }
             else
             {
-                angle += offset;
-
-                float x = transform.position.x + circleRadius * Mathf.Cos(Mathf.Deg2Rad * angle);
-                float y = transform.position.y + circleRadius * Mathf.Sin(Mathf.Deg2Rad * angle);
-
-                Vector3 spawnPosition = new Vector3(x, y, 0f);
-
                 FiringLittleBullet(spawnPosition);
             }
         }
@@ -490,7 +482,7 @@ public class FirstBoss : MonoBehaviour
         {
             if (!littleBullet._isLunched)
             {
-                littleBullet.LunchingBullet(new Vector3(lunchingPos.x - transform.position.x, lunchingPos.y - transform.position.y, -1), lunchingPos);
+                littleBullet.LunchingBullet(new Vector2(lunchingPos.x - transform.position.x, lunchingPos.y - transform.position.y), lunchingPos);
                 break;
             }
         }

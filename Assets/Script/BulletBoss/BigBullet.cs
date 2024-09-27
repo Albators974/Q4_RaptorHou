@@ -12,7 +12,6 @@ public class BigBullet : MonoBehaviour
 
     void Start()
     {
-        BossManager.instance._bigBullet.Add(this);
         _isLunched = false;
         _rb = GetComponent<Rigidbody2D>();
         _initialPos = transform.position;

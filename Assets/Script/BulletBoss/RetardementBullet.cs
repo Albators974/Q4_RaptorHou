@@ -17,7 +17,6 @@ public class RetardementBullet : MonoBehaviour
 
     void Start()
     {
-        BossManager.instance._retardementBullet.Add(this);
         _isLunched = false;
         _canBeLunchedAgain = true;
         _rb = GetComponent<Rigidbody2D>();

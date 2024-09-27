@@ -5,9 +5,9 @@ public class BossManager : MonoBehaviour
 {
     public static BossManager instance;
 
-    public List<LittleBullet> _littleBullet;
-    public List<BigBullet> _bigBullet;
-    public List<RetardementBullet> _retardementBullet;
+    public List<Bullet> _littleBullet;
+    public List<Bullet> _bigBullet;
+    public List<RetardementBullet> _retardementBulletList;
     public List<FragmentingBullet> _fragmentingBulletList;
     public List<Vector3> _firstBossPositionSecondAttackScheme;
 
@@ -16,13 +16,16 @@ public class BossManager : MonoBehaviour
     public int _duplicationToDOFirstBoss = 4;
     public float _distanceSpanwBossFirstBoss = 0.5f;
 
-    void Start()
+    private void Awake()
     {
         instance = this;
+    }
 
-        _littleBullet = new List<LittleBullet>();
-        _bigBullet = new List<BigBullet>();
-        _retardementBullet = new List<RetardementBullet>();
+    void Start()
+    {
+        _littleBullet = new List<Bullet>();
+        _bigBullet = new List<Bullet>();
+        _retardementBulletList = new List<RetardementBullet>();
         _fragmentingBulletList = new List<FragmentingBullet>();
     }
 }

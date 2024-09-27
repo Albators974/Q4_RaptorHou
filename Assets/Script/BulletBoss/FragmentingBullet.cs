@@ -22,7 +22,6 @@ public class FragmentingBullet : MonoBehaviour
     {
         _initialPos = transform.position;
         _rb = GetComponent<Rigidbody2D>();
-        BossManager.instance._fragmentingBulletList.Add(this);
         _positioned = false;
     }
 

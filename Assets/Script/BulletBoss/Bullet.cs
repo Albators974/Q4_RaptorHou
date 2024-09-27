@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class LittleBullet : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     public bool _isLunched;
     public float _speed = 3f;
     public float _decelerationFactor = 0.1f;
     public Rigidbody2D _rb;
+    public bool _decelerate = false;
 
     private Vector3 _initialPos;
 
@@ -18,7 +19,10 @@ public class LittleBullet : MonoBehaviour
 
     private void Update()
     {
-        _rb.velocity *= (1 - _decelerationFactor * Time.deltaTime);
+        if (_decelerate)
+        {        
+            _rb.velocity *= 1 - _decelerationFactor * Time.deltaTime;
+        }
     }
 
     public void LunchingBullet(Vector2 directionNorNormalized, Vector3 lunchingPosition)

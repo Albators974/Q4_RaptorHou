@@ -3078,14 +3078,19 @@ MonoBehaviour:
   _listAllBullet:
   - _nbrToSpawn: 100
     _bulletPrefab: {fileID: 2754569397189335116, guid: e4163c2ccafcdcf468b3e549ce151c4e, type: 3}
+    _bulletType: 0
   - _nbrToSpawn: 1000
     _bulletPrefab: {fileID: 5325796335469135392, guid: 38dd3035adee67b42900ce5eaa876782, type: 3}
+    _bulletType: 1
   - _nbrToSpawn: 200
     _bulletPrefab: {fileID: 4919489003964203393, guid: 2520139789d823e4b92964bd856114ac, type: 3}
+    _bulletType: 0
   - _nbrToSpawn: 88
     _bulletPrefab: {fileID: 5325796335469135392, guid: 3e7deb7865b5c8c46a5bfdf890523739, type: 3}
+    _bulletType: 3
   - _nbrToSpawn: 1024
     _bulletPrefab: {fileID: 3064354695467412342, guid: 1179d48f0f2da254189a92adb7f11dfb, type: 3}
+    _bulletType: 2
   _player: {fileID: 779867587}
   _spawnerBoss: {fileID: 439067488}
   _bossList:
@@ -3126,7 +3131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _littleBullet: []
   _bigBullet: []
-  _retardementBullet: []
+  _retardementBulletList: []
   _fragmentingBulletList: []
   _firstBossPositionSecondAttackScheme:
   - {x: -2, y: 0.5, z: 0}

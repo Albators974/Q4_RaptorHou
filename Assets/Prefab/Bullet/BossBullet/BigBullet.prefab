@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9198353056501177183}
-  - component: {fileID: 6979027432387872688}
+  - component: {fileID: -7927564811730744173}
   - component: {fileID: 7331702647821914052}
   - component: {fileID: -4545173271498244781}
   m_Layer: 6
@@ -121,7 +121,7 @@ Transform:
   - {fileID: 1236904617636273621}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6979027432387872688
+--- !u!114 &-7927564811730744173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,13 +130,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4919489003964203393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85a3b479ee19fa94ca28d47f679c1819, type: 3}
+  m_Script: {fileID: 11500000, guid: 557781b16cc775343a37d629451c38a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _isLunched: 0
   _speed: 1.5
   _decelerationFactor: 0.1
-  _decelerate: 0
+  _rb: {fileID: 0}
 --- !u!58 &7331702647821914052
 CircleCollider2D:
   m_ObjectHideFlags: 0
