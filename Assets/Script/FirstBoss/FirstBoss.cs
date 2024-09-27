@@ -5,43 +5,36 @@ using UnityEngine;
 
 public class FirstBoss : MonoBehaviour
 {
-    public List<LittleBullet> _littleBulletList;
-    public List<Vector3> _positionSecondAttackScheme;
-    public List<BigBullet> _bigBulletList;
-    public List<RetardementBullet> _retardementBulletList;
-    public List<FragmentingBullet> _fragmentingBulletList;
-    public List<GameObject> _allSpawnPoint;
-    public List<GameObject> _spawnPointUDLR;
-    public float _timeToWAitForFirtsAttackSchemeToEnd = 1f;
-    public int _waveNumber;
-    public int _numberOfPointsFirstAttack = 40;
-    public int _numberOfPointsSecondAttack = 32;
-    public int _numberOfPointsThirdAttack = 4;
-    public int _numberOfPointsFourthAttack = 3;
-    public int _numberOfWaveSixthAttack = 10;
-    public float _timeTorReachPlayerSixthAttack = 1.5f;
-    public int _valeurOffset = 5;
-
-    public int _fragmentingNbr;
-    public float _distanceToParkour;
-    public int _duplicationToDO;
-    public float _distanceSpanwBoss;
-
-    public int _lifePoint = 1000000;
-
-    public CircleCollider2D _circleCollider2;
-
-    public List<Vector3> _thirdAttackBulletSpawn;
-
-    public GameObject _light;
-
-    public List<GameObject> _listBonus;
-
-    private int _deplacementNbrSecondAttackScheme;
+    private float _timeToWAitForFirtsAttackSchemeToEnd = 1f;
+    private int _waveNumber;
+    private int _numberOfPointsFirstAttack = 40;
+    private int _numberOfPointsSecondAttack = 32;
+    private int _numberOfPointsThirdAttack = 4;
+    private int _numberOfPointsFourthAttack = 3;
+    private int _numberOfWaveSixthAttack = 10;
+    private float _timeTorReachPlayerSixthAttack = 1.5f;
+    private int _valeurOffset = 5;
+    private int _fragmentingNbr;
+    private float _distanceToParkour;
+    private int _duplicationToDO;
+    private float _distanceSpanwBoss;
+    private int _currentDeplacementNbrSecondAttackScheme = 0;
     private int _random;
-    private TextMeshProUGUI _countDown;
     private int _modulingBonus = 0;
     private int _numberHpToDecreasToSpawnBonus;
+
+    private TextMeshProUGUI _countDown;
+    private List<LittleBullet> _littleBulletList;
+    private List<Vector3> _positionSecondAttackScheme;
+    private List<BigBullet> _bigBulletList;
+    private List<RetardementBullet> _retardementBulletList;
+    private List<FragmentingBullet> _fragmentingBulletList;
+    private CircleCollider2D _circleCollider2;
+    private List<Vector3> _thirdAttackBulletSpawn;
+    private GameObject _light;
+    private List<GameObject> _listBonus;
+
+    public int _lifePoint = 1000000;
 
     void Start()
     {
@@ -62,6 +55,7 @@ public class FirstBoss : MonoBehaviour
         GameManager.instance._player._canShoot = false;
         _lifePoint = PlayerPrefs.GetInt("BossMaxHp");
         GameManager.instance._hpSlider.maxValue = _lifePoint;
+
         if (PlayerPrefs.GetInt("Impossible") == 0)
         {         
             _numberHpToDecreasToSpawnBonus = _lifePoint / 4;
@@ -70,6 +64,7 @@ public class FirstBoss : MonoBehaviour
         {
             _numberHpToDecreasToSpawnBonus = 100;
         }
+
         StartCoroutine(SpawningTime());
     }
 
@@ -79,31 +74,29 @@ public class FirstBoss : MonoBehaviour
         StartCoroutine(TimeToWaitForEndingAttackScheme(_timeToWAitForFirtsAttackSchemeToEnd));
     }
 
+
     public void SecondAttackScheme()
     {
-        switch (_deplacementNbrSecondAttackScheme)
+        if (_currentDeplacementNbrSecondAttackScheme == _positionSecondAttackScheme.Count)
         {
-            case 0:
-                transform.position = _positionSecondAttackScheme[0];
-                _deplacementNbrSecondAttackScheme++;
-                StartCoroutine(SpawningBulletSecondAttackScheme(_valeurOffset));
-                break;
-            case 1:
-                transform.position = _positionSecondAttackScheme[1];
-                _deplacementNbrSecondAttackScheme++;
-                StartCoroutine(SpawningBulletSecondAttackScheme(_valeurOffset));
-                break;
-            case 2:
-                transform.position = _positionSecondAttackScheme[2];
-                _deplacementNbrSecondAttackScheme++;
-                StartCoroutine(SpawningBulletSecondAttackScheme(_valeurOffset));
-                break;
-            case 3:
-                StopAllCoroutines();
-                _deplacementNbrSecondAttackScheme = 0;
-                NextAttackScheme();
-                break;
+            ResetSecondAttack();
+            return;
         }
+        
+        BossDestinationAttack(_currentDeplacementNbrSecondAttackScheme);
+    }
+    private void BossDestinationAttack(int posIndex)
+    {
+        transform.position = _positionSecondAttackScheme[posIndex];
+        _currentDeplacementNbrSecondAttackScheme++;
+        StartCoroutine(SpawningBulletSecondAttackScheme(_valeurOffset));
+    }
+
+    private void ResetSecondAttack()
+    {
+        StopAllCoroutines();
+        _currentDeplacementNbrSecondAttackScheme = 0;
+        NextAttackScheme();
     }
 
     public void ThirdAttackScheme()
@@ -545,16 +538,15 @@ public class FirstBoss : MonoBehaviour
         {
             _lifePoint--;
             PlayerPrefs.SetInt("BossHealth", _lifePoint);
+
             _modulingBonus++;
             if (_modulingBonus == _numberHpToDecreasToSpawnBonus)
             {
-                _numberHpToDecreasToSpawnBonus += _numberHpToDecreasToSpawnBonus;
+                _modulingBonus = 0;
                 int random = Random.Range(0, _listBonus.Count - 1);
                 Instantiate(_listBonus[random], transform.position, Quaternion.identity);
             }
         }
-
-
 
         if (_lifePoint == 0)
         {
