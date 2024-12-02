@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -122,7 +123,18 @@ public class FirstBoss : MonoBehaviour
     public void NextAttackScheme()
     {
         _random = Random.Range(1, 7);
-        switch (_random)
+        SelectAttack(_random);
+
+        if (PlayerPrefs.GetInt("Impossible") == 1)
+        {
+            _random = Random.Range(1, 7);
+            SelectAttack(_random);
+        }
+    }
+
+    public void SelectAttack(int random)
+    {
+        switch (random)
         {
             case 1:
                 FirstAttackScheme();
@@ -144,33 +156,6 @@ public class FirstBoss : MonoBehaviour
                 break;
             default:
                 break;
-        }
-        if (PlayerPrefs.GetInt("Impossible") == 1)
-        {
-            _random = Random.Range(1, 7);
-            switch (_random)
-            {
-                case 1:
-                    FirstAttackScheme();
-                    break;
-                case 2:
-                    SecondAttackScheme();
-                    break;
-                case 3:
-                    ThirdAttackScheme();
-                    break;
-                case 4:
-                    FourthAttackScheme();
-                    break;
-                case 5:
-                    FifthAttackScheme();
-                    break;
-                case 6:
-                    StartCoroutine(WaitBeforLunchingSixthAttack());
-                    break;
-                default:
-                    break;
-            }
         }
     }
 
@@ -200,35 +185,13 @@ public class FirstBoss : MonoBehaviour
         int countDown = 10;
         yield return new WaitForSeconds(8f);
         _countDown.gameObject.SetActive(true);
-        _countDown.text = "Boss active in : " + countDown;
-        countDown = 9;
-        yield return new WaitForSeconds(1f);
-        _countDown.text = "Boss active in : " + countDown;
-        countDown = 8;
-        yield return new WaitForSeconds(1f);
-        _countDown.text = "Boss active in : " + countDown;
-        countDown = 7;
-        yield return new WaitForSeconds(1f);
-        _countDown.text = "Boss active in : " + countDown;
-        countDown = 6;
-        yield return new WaitForSeconds(1f);
-        _countDown.text = "Boss active in : " + countDown;
-        countDown = 5;
-        yield return new WaitForSeconds(1f);
-        _countDown.text = "Boss active in : " + countDown;
-        countDown = 4;
-        yield return new WaitForSeconds(1f);
-        _countDown.text = "Boss active in : " + countDown;
-        countDown = 3;
-        yield return new WaitForSeconds(1f);
-        _countDown.text = "Boss active in : " + countDown;
-        countDown = 2;
-        yield return new WaitForSeconds(1f);
-        _countDown.text = "Boss active in : " + countDown;
-        countDown = 1;
-        yield return new WaitForSeconds(1f);
-        _countDown.text = "Boss active in : " + countDown;
-        yield return new WaitForSeconds(1f);
+
+        for (int i = countDown - 1; i > 0; i--)
+        {
+            _countDown.text = "Boss active in : " + i;
+            yield return new WaitForSeconds(1f);
+        }
+
         _countDown.gameObject.SetActive(false);
         GameManager.instance._player._canShoot = true;
     }
@@ -239,6 +202,14 @@ public class FirstBoss : MonoBehaviour
         StopAllCoroutines();
         _waveNumber = 0;
         NextAttackScheme();
+    }
+
+    public float[] CalculateSpawningBulletRotation(float circleRadius, float angle, int offset = 0)
+    {
+        float x = transform.position.x + circleRadius * Mathf.Cos(Mathf.Deg2Rad * (angle + offset));
+        float y = transform.position.y + circleRadius * Mathf.Sin(Mathf.Deg2Rad * (angle + offset));
+
+        return new float[] { x, y };
     }
 
     IEnumerator SpawningBulletFirstAttackScheme()
@@ -252,10 +223,9 @@ public class FirstBoss : MonoBehaviour
         {
             float angle = i * (360f / _numberOfPointsFirstAttack);
 
-            float x = transform.position.x + circleRadius * Mathf.Cos(Mathf.Deg2Rad * (angle + offset));
-            float y = transform.position.y + circleRadius * Mathf.Sin(Mathf.Deg2Rad * (angle + offset));
+            float[] coord = CalculateSpawningBulletRotation(circleRadius, angle, offset);
 
-            Vector3 spawnPosition = new Vector3(x, y, 0f);
+            Vector3 spawnPosition = new Vector3(coord[0], coord[1], 0f);
 
             if (angle % 45 == 0 && _waveNumber % 2 == 0)
             {
@@ -280,13 +250,10 @@ public class FirstBoss : MonoBehaviour
         for (int i = 0; i < _numberOfPointsSecondAttack; i++)
         {
             float angle = i * (360f / _numberOfPointsSecondAttack);
-          
-            angle += offset;
 
-            float x = transform.position.x + circleRadius * Mathf.Cos(Mathf.Deg2Rad * angle);
-            float y = transform.position.y + circleRadius * Mathf.Sin(Mathf.Deg2Rad * angle);
+            float[] coord = CalculateSpawningBulletRotation(circleRadius, angle, offset);
 
-            Vector3 spawnPosition = new Vector3(x, y, 0f);
+            Vector3 spawnPosition = new Vector3(coord[0], coord[1], 0f);
 
             FiringLittleBullet(spawnPosition);
         }
@@ -315,12 +282,11 @@ public class FirstBoss : MonoBehaviour
         {
             float angle = i * (360f / _numberOfPointsThirdAttack);
 
-            float x = transform.position.x + circleRadius * Mathf.Cos(Mathf.Deg2Rad * angle);
-            float y = transform.position.y + circleRadius * Mathf.Sin(Mathf.Deg2Rad * angle);
+            float[] coord = CalculateSpawningBulletRotation(circleRadius, angle);
 
-            Vector3 spawnPosition = new Vector3(x, y, -1f);
+            Vector3 spawnPosition = new Vector3(coord[0], coord[1], -1f);
 
-            CreatAttack(new Vector3(transform.position.x, transform.position.y, 0));
+            CreateAttack(new Vector3(transform.position.x, transform.position.y, 0));
 
             List<Vector3> _tempList = TurnAttack(_thirdAttackBulletSpawn, angle + 90, new Vector3(transform.position.x, transform.position.y, 0));
 
@@ -348,12 +314,9 @@ public class FirstBoss : MonoBehaviour
         {
             float angle = i * (360f / _numberOfPointsFourthAttack);
 
-            angle += offset;
+            float[] coord = CalculateSpawningBulletRotation(circleRadius, angle, offset);
 
-            float x = transform.position.x + circleRadius * Mathf.Cos(Mathf.Deg2Rad * angle);
-            float y = transform.position.y + circleRadius * Mathf.Sin(Mathf.Deg2Rad * angle);
-
-            Vector3 spawnPosition = new Vector3(x, y, 0f);
+            Vector3 spawnPosition = new Vector3(coord[0], coord[1], 0f);
 
             FiringBigBullet(spawnPosition);
         }
@@ -381,10 +344,9 @@ public class FirstBoss : MonoBehaviour
         {
             float angle = i * (360f / fragmentingNbr);
 
-            float x = transform.position.x + distanceToParkour * Mathf.Cos(Mathf.Deg2Rad * angle);
-            float y = transform.position.y + distanceToParkour * Mathf.Sin(Mathf.Deg2Rad * angle);
+            float[] coord = CalculateSpawningBulletRotation(distanceToParkour, angle);
 
-            Vector3 targetPosition = new Vector3(x, y, 0f);
+            Vector3 targetPosition = new Vector3(coord[0], coord[1], 0f);
 
             FiringFragmentingBullet(fragmentingNbr, duplicationToDO, bullet, transform.position, targetPosition, distanceToParkour);
         }
@@ -417,7 +379,7 @@ public class FirstBoss : MonoBehaviour
         }
     }
 
-    public void CreatAttack(Vector3 spawnPoint)
+    public void CreateAttack(Vector3 spawnPoint)
     {
         _thirdAttackBulletSpawn.Add(spawnPoint);
         _thirdAttackBulletSpawn.Add(new Vector3(spawnPoint.x, spawnPoint.y - 1f, spawnPoint.z));
@@ -456,17 +418,14 @@ public class FirstBoss : MonoBehaviour
 
         foreach (var point in points)
         {
-            // Translate the point to the origin
             float xTranslated = point.x - origin.x;
             float yTranslated = point.y - origin.y;
 
             float angleRad = Mathf.Deg2Rad * angle;
 
-            // Rotation matrix
             float xNouveau = Mathf.Cos(angleRad) * xTranslated - Mathf.Sin(angleRad) * yTranslated;
             float yNouveau = Mathf.Sin(angleRad) * xTranslated + Mathf.Cos(angleRad) * yTranslated;
 
-            // Translate the point back to its original position
             xNouveau += origin.x;
             yNouveau += origin.y;
 
